@@ -40,6 +40,7 @@ HOMEWORK_STATUSES = {
 
 
 def send_message(bot, message):
+    """Отправляем сообщение в телеграм."""
     try:
         bot.send_message(TELEGRAM_CHAT_ID, message)
     except Exception as error:
