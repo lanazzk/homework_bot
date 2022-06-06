@@ -54,7 +54,10 @@ def get_api_answer(current_timestamp):
     """Делаем GET-запрос к эндпоинту."""
     timestamp = current_timestamp or int(time.time())
     params = {'from_date': timestamp}
-    response = requests.get(ENDPOINT, headers=HEADERS, params=params)
+    try:
+        response = requests.get(ENDPOINT, headers=HEADERS, params=params)
+    except Exception as error:
+        raise error('Сбой доступа к эндпойнту')
     if response.status_code != HTTPStatus.OK:
         raise exceptions.HTTPErrorException('Страница недоступна')
     return response.json()
