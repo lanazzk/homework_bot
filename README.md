@@ -1,2 +1,2 @@
-# homework_bot
+# API telegram bot for parsing homework status
 python telegram bot
