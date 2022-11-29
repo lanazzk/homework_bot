@@ -1,4 +1,4 @@
-# Telegram-бот for parsing homework status
+# Telegram-bot for parsing homework status
 
 Telegram bot can:
 - At the specified time interval, query the Practicum.Homework service API and check the status of the homework submitted for review;
