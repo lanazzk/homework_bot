@@ -1,11 +1,11 @@
-# Telegram-бот для определения статуса домашней работы
+# Telegram-бот for parsing homework status
 
-Telegram-бот умеет:
-- С указанным интервалом времени опрашивать API сервиса Практикум.Домашка и проверять статус отправленной на ревью домашней работы;
-- При обновлении статуса анализировать ответ API и отправлять соответствующее уведомление в Telegram;
-- Логировать свою работу и сообщать вам о важных проблемах сообщением в Telegram.
+Telegram bot can:
+- At the specified time interval, query the Practicum.Homework service API and check the status of the homework submitted for review;
+- When updating the status, analyze the API response and send a corresponding notification to Telegram;
+- Log your work and inform you about important issues with a message in Telegram.
 
-Примеры логирования:
+Logging examples:
 
 ```
 2021-10-09 15:34:45,150 [ERROR] Сбой в работе программы: Эндпоинт https://practicum.yandex.ru/api/user_api/homework_statuses/111 недоступен. Код ответа API: 404
@@ -13,6 +13,6 @@ Telegram-бот умеет:
 2021-10-09 16:19:13,149 [CRITICAL] Отсутствует обязательная переменная окружения: 'TELEGRAM_CHAT_ID'
 Программа принудительно остановлена.
 ```
-## Технологии
+## Technologies
 - Python 3.8
 - Teleram Bot API
